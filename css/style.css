@@ -1,0 +1,25 @@
+        /* child selector, select li from ul */
+        ul li {
+            color: red;
+        }
+
+        dl li {
+            color: blue;
+        }
+
+        ul li a {
+            color: black;
+            text-decoration: none;
+        }
+
+        .nav li a {
+            color: green;
+        }
+
+        #ha li a {
+            color: blueviolet;
+        }
+
+        /* child selector , select li from ul */
+
+        /*  .nav will skip ul , then go li then go a */
