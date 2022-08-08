@@ -7,6 +7,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
+        * {
+            padding: 0;
+            margin: 0;
+        }
+        /* dont forget to clean your default margin and padding */
+
         .box {
             width: 1226px;
             height: 615px;
@@ -37,7 +43,6 @@
             width: 234px;
             margin-left: 14px;
             margin-bottom: 14px;
-
             background-color: pink;
         }
     </style>
@@ -48,14 +53,16 @@
     <div class="box">
         <div class="left"></div>
         <div class="right">
-            <div class="smallbox">1</div>
-            <div class="smallbox">2</div>
-            <div class="smallbox">3</div>
-            <div class="smallbox">4</div>
-            <div class="smallbox">5</div>
-            <div class="smallbox">6</div>
-            <div class="smallbox">7</div>
-            <div class="smallbox">8</div>
+            <ul>
+                <li class="smallbox">1</li>
+                <li class="smallbox">2</li>
+                <li class="smallbox">3</li>
+                <li class="smallbox">4</li>
+                <li class="smallbox">5</li>
+                <li class="smallbox">6</li>
+                <li class="smallbox">7</li>
+                <li class="smallbox">8</li>
+            </ul>
         </div>
     </div>
 
