@@ -1,0 +1,24 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+/* css default format 
+1: layout and postion attribute
+2: self attribute (color height margin padding)
+3: text attribute
+4：css3 content*/
+
+/* .div {
+    display: block;
+    position: relative;
+    float: left;
+    width: 100px;
+    height: 100px;
+    margin: 0 auto;
+    padding: 20px 0;
+    font-family: 'Courier New', Courier, monospace;
+    color: aliceblue;
+    background-color: aliceblue;
+    border: 1px solid beige;
+} */

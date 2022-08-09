@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* parent box should not design height */
+
+        .box {
+            width: 900px;
+            background-color: green;
+            margin: 0 auto;
+
+        }
+
+        .box1 {
+            width: 300px;
+            height: 200px;
+            float: left;
+            background-color: antiquewhite;
+        }
+
+        .box2 {
+            width: 300px;
+            height: 300px;
+            float: left;
+            background-color: cadetblue;
+        }
+
+        .footer {
+            background-color: blueviolet;
+            width: 900px;
+            height: 400px;
+            margin: 0 auto;
+        }
+
+        .clear {
+            clear: both;
+            /* it is suggested by w3c, put a div at end of box before getting next line */
+            /* it is not suggested to use */
+            /* note new box must be box block */
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="box">
+        <div class="box1"></div>
+        <div class="box2"></div>
+        <div class="clear"></div>
+    </div>
+
+    <div class="footer">
+
+    </div>
+</body>
+
+</html>
