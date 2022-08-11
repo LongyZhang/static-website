@@ -237,7 +237,182 @@ body {
     text-decoration: none;
 }
 
+.main_header {
+    height: 60px;
+    line-height: 60px;
+}
 
+.main_header h3 {
+    float: left;
+    margin-left: 20px;
+
+}
+
+.main_header a {
+    float: right;
+    color: grey;
+    margin-right: 20px;
+    cursor: pointer;
+    text-decoration: none;
+
+}
+
+.box {
+    height: 600px;
+    margin-top: 20px;
+}
+
+.main_header {
+    height: 60px;
+    line-height: 60px;
+}
+
+.main_header h3 {
+    float: left;
+}
+
+.main_header a {
+    float: right;
+    color: grey;
+    text-decoration: none;
+    font-weight: 400;
+}
+
+.main {
+    float: left;
+}
+
+.main ul {
+    width: 1225px;
+}
+
+.main ul li {
+    float: left;
+    display: block;
+    margin-right: 15px;
+    margin-bottom: 10px;
+    height: 270px;
+    width: 228px;
+    background-color: white;
+}
+
+.main ul li a {
+    display: block;
+    height: 270px;
+    width: 233px;
+    text-decoration: none;
+
+
+}
+
+.main ul li h4 {
+
+    display: block;
+    margin: 20px 15px;
+
+}
+
+.main ul li h5 {
+
+    display: inline-block;
+    margin: 5px 15px;
+    color: red;
+}
+
+.main ul li span {
+
+    font-size: smaller;
+}
+
+.footer {
+    height: 415px;
+    background-color: white;
+    margin-top: 40px;
+}
+
+.box_left {
+    float: left;
+    display: block;
+    height: 150px;
+    width: 500px;
+    padding-left: 10px;
+}
+
+.box_left img {
+    padding-top: 20px;
+}
+
+.box_left p {
+    margin-top: 10px;
+    color: grey;
+
+}
+
+.box_left .download {
+    display: block;
+    height: 50px;
+    width: 150px;
+    border: 1px solid skyblue;
+    margin-top: 20px;
+    line-height: 50px;
+    text-align: center;
+}
+
+.box_right {
+    float: right;
+    display: block;
+    height: 150px;
+    width: 600px;
+    padding-right: 10px;
+    margin-top: 20px;
+
+}
+
+.box_right a {
+    text-decoration: none;
+}
+
+.right1 {
+    float: right;
+    margin-right: 30px;
+    color: grey;
+
+}
+
+.right1 li {
+    list-style: none;
+    text-decoration: none;
+
+    font-weight: 300;
+    margin: 10px 0;
+
+}
+
+.right2 {
+    float: right;
+    margin-right: 30px;
+    color: grey;
+}
+
+.right2 li {
+    list-style: none;
+    text-decoration: none;
+    margin: 10px 0;
+    font-weight: 300;
+}
+
+.right3 {
+    float: right;
+    margin-right: 30px;
+    color: grey;
+}
+
+.right3 li {
+    list-style: none;
+    text-decoration: none;
+    margin: 10px 0;
+    font-weight: 300;
+}
 
 /* css default format 
 1: layout and postion attribute
