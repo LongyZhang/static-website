@@ -1,14 +1,64 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Position Study</title>
-</head>
-<body>
 
-    <!-- Position = Position model +  -->
-    
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+        }
+
+        .bigbox {
+            height: 2000px;
+            width: 2000px;
+            background-color: pink;
+
+            position: relative;
+        }
+
+        .box {
+            height: 600px;
+            width: 1000px;
+            position: relative;
+            background-color: aqua;
+
+        }
+
+        .box2 {
+            background-color: red;
+            height: 200px;
+            width: 200px;
+            position: absolute;
+            bottom: 30px;
+
+            left: 100px;
+
+        }
+
+        /* the postion will be basing on the nearst element which has postion attribute */
+
+        /* if the parent element does not have elements, the grandfather elements have element. the postion will be basing on the grandfather elements */
+        /* if parent elements do not have postion, the child will base on the web brower */
+        /* if the parent elements has postion, the child postion will basing on the parent elements */
+    </style>
+</head>
+
+<body>
+    <div class="bigbox">
+        <div class="box">
+            <div class="box2"></div>
+        </div>
+    </div>
+
+
+
+    <!-- Position = Position model +  top bottom left right -->
+
 </body>
+
 </html>

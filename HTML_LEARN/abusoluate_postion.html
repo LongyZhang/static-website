@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .bigbox {
+            float: left;
+            width: 200px;
+            height: 500px;
+            position: relative;
+            background-color: pink;
+        }
+
+        .box {
+            background-color: blue;
+            width: 200px;
+            height: 200px;
+            position: absolute;
+            bottom: 20px;
+            left: 20px;
+        }
+
+        .smallbox {
+            float: left;
+            width: 30px;
+            height: 500px;
+            position: relative;
+            background-color: red;
+        }
+
+        /* if another box is pure float left, it will be placed by blue box */
+        /* if the another box is relative float left, it will occupy the left one */
+        /* child absolute element can be placed in anywhere, it does not affect anothers */
+        /* parent should be relative , child should be absolute */
+        /* absolute is like the float,, it does not occupy locationit will floating higher than base elements */
+
+        /* if parent is absolute and if child is standard div, the child will be covered by parent  */
+    </style>
+</head>
+
+<body>
+
+    <div class="bigbox">
+        <div class="box">
+        </div>
+    </div>
+    <div class="smallbox"></div>
+
+
+
+</body>
+
+</html>
