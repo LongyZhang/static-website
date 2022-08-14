@@ -51,8 +51,36 @@
             border-bottom-left-radius: 15px;
             right: 0;
         }
- 3
-     </style>
+
+        .promo ul {
+            position: absolute;
+            bottom: 10px;
+            left: 50%;
+            width: 70px;
+            height: 13px;
+            margin-left: -35px;
+            border-radius: 7px;
+            background-color: rgba(0, 0, 0, .3);
+
+        }
+
+        .promo ul li {
+            float: left;
+            list-style: none;
+            background-color: white;
+            height: 10px;
+            width: 10px;
+            border-radius: 10px;
+            margin-right: 3px;
+        }
+
+        .promo ul li:hover {
+            background-color: orange;
+        }
+
+        /* absolute contains left and right */
+        /*  if the default have left and right, it will execute left value*/
+    </style>
 </head>
 
 <body>
@@ -60,6 +88,13 @@
         <img src="promo1.jpg" alt="">
         <a href="" class="prev">&lt;</a>
         <a href="" class="next">&gt;</a>
+        <ul>
+            <li class="point"></li>
+            <li class="point"></li>
+            <li class="point"></li>
+            <li class="point"></li>
+            <li class="point"></li>
+        </ul>
     </div>
 
 </body>
