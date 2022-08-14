@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            height: 3000px;
+        }
+
+        .bigbox {
+            width: 3000px;
+            height: 2000px;
+            background-color: antiquewhite;
+        }
+
+        .smallbox {
+            width: 1000px;
+            height: 500px;
+            background-color: black;
+            position: relative;
+        }
+
+        .nav {
+            position: absolute;
+            top: 0;
+            left: 10px;
+            width: 800px;
+            height: 50px;
+            background-color: pink;
+            margin: 100px auto;
+            z-index: 21;
+        }
+
+        .extra {
+            height: 300px;
+            width: 200px;
+            background-color: red;
+            z-index: 20;
+            position: absolute;
+            top: 0;
+            left: 10px;
+        }
+
+        /* i */
+        /* sticky must be work with one of top bottom left and right */
+        /* sticky will stick into single postion basing on top bottom left right, when you scoll down out of brower view,it will stick here */
+        /* sticky postion is combination of relative and absolute */
+    </style>
+</head>
+
+<body>
+    <div class="bigbox">
+        <div class="smallbox">
+            <div class="nav"> i am nav bar</div>
+            class="smallbox"
+            <div class="extra"></div>
+        </div>
+    </div>
+</body>
+
+</html>
