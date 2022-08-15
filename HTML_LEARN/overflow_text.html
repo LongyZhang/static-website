@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box {
+            width: 100px;
+            height: 100px;
+            background-color: pink;
+
+            margin: 100px auto;
+
+
+            /* overflow and text-overflow and white-space nowrap is combo */
+            /* white space normal means to dispaly content in one next line */
+            /* white space nowrap means to dispaly text in single line*/
+        }
+
+        .box ul {
+            padding: 0;
+        }
+
+        .box ul li {
+            margin-left: 0px;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+            list-style: none;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box">
+
+        <ul>
+            <li>dasdsa1</li>
+            <li>2dasddasdassa</li>
+            <li>3dasdas</li>
+            <li>dasd4</li>
+            <li>5dasdas</li>
+        </ul>
+    </div>
+
+</body>
+
+</html>
