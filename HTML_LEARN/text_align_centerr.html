@@ -7,11 +7,58 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
+        .box {
+            height: 300px;
+            width: 900px;
+            margin: 100px auto;
+            text-align: center;
 
+            /* if there is text, we normally give the text-aglin center to parent elements */
+        }
+
+        .box a {
+            display: inline-block;
+            width: 30px;
+            height: 36px;
+            background-color: pink;
+            border: 1px solid red;
+            text-decoration: none;
+            line-height: 36px;
+        }
+
+        .box .next,
+        .box .prev {
+            width: 85px;
+
+        }
+
+        .box .current {
+            border: 1px solid transparent;
+            background-color: white;
+        }
+
+        .box input,
+        .box button {
+            height: 36px;
+        }
     </style>
 </head>
 
 <body>
+    <div class="box">
+        <a href="#" class="next">&lt;&lt;last page</a>
+        <a href="#" class="current">2</a>
+        <a href="#">3</a>
+        <a href="#">4</a>
+        <a href="#">5</a>
+        <a href="#">6</a>
+        <a href="#">..</a>
+        <a href="#">8</a>
+        <input type="text" name="" id="" value="Please type your">
+        <button>Click</button>
+        <a href="#" class="prev">&gt;&gt;Next page</a>
+    </div>
+    <!-- if you want to display item horzontally , it is better to use inline block  and text aglin center in parent element  -->
 
 </body>
 
