@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        .box {
+            height: 200px;
+            width: 200px;
+            background-color: pink;
+            border: 10px solid red;
+
+            /* box-sizing:border-box is able to display pure 200px box, it does not include the border */
+        }
+
+        p {
+            height: 200px;
+            width: 200px;
+            background-color: pink;
+            border: 10px solid red;
+            box-sizing: border-box;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box"></div>
+    <p></p>
+    <!-- the current box size is 220px , it is addded by height and border -->
+
+</body>
+
+</html>

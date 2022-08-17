@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        @font-face {
+            font-family: 'icomoon';
+            src: url('fonts/icomoon.eot?uj0vbi');
+            src: url('fonts/icomoon.eot?uj0vbi#iefix') format('embedded-opentype'),
+                url('fonts/icomoon.ttf?uj0vbi') format('truetype'),
+                url('fonts/icomoon.woff?uj0vbi') format('woff'),
+                url('fonts/icomoon.svg?uj0vbi#icomoon') format('svg');
+            font-weight: normal;
+            font-style: normal;
+            font-display: block;
+        }
+
+        /* using before and after allow us to insert the element inside of css */
+        /* ::before insert element before the element*/
+        /* ::after insert element after the parent element */
+        /* before and after must have content  */
+        .box {
+            background-color: grey;
+            width: 300px;
+            height: 500px;
+            margin: 100px auto;
+        }
+
+        .box::before {
+            float: left;
+            content: "5";
+            display: inline-block;
+            height: 50px;
+            width: 30px;
+            background-color: pink;
+        }
+
+        .box li {
+            position: relative;
+            height: 100px;
+
+            line-height: 100px;
+            list-style: none;
+            color: white;
+
+        }
+
+        .box li::before {
+            content: "my number is ";
+            margin-left: -10px;
+            margin-right: 20px;
+        }
+
+        .box li::after {
+            font-family: 'icomoon';
+            font-size: 50px;
+            position: absolute;
+            right: 20px;
+            content: '\ea92';
+
+
+        }
+
+        /* before and after usually used for icon  */
+        /* before and after can not be find in inspect */
+        /* before and after must have content */
+        /* before and after are going to put new content at front of element */
+    </style>
+</head>
+
+<body>
+    <div class="box">
+        <ul>
+            <li>12</li>
+            <li>12</li>
+            <li>12</li>
+            <li>12</li>
+            <li>12</li>
+        </ul>
+    </div>
+
+
+</body>
+
+</html>
