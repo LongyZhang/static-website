@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            /* box-sizing: border-box; */
+            padding: 0;
+            margin: 0;
+        }
+
+        .box {
+            width: 300px;
+            height: 300px;
+            margin: 0 auto;
+            border: 1px solid purple;
+        }
+
+        .box img {
+            height: 150px;
+            width: 150px;
+            margin-left: 70px;
+        }
+
+        .box p {
+            text-align: center;
+            color: grey;
+            font-family: 'Courier New', Courier, monospace;
+        }
+
+        .bar {
+            height: 12px;
+            width: 150px;
+            border: 1px solid red;
+            border-radius: 12px;
+            margin: 20px auto;
+        }
+
+        .bar p {
+            color: red;
+
+        }
+
+        .bar_in {
+            width: 50%;
+            height: 12px;
+            background: url(regetype.png) no-repeat;
+            border-radius: 12px;
+            transition: width 2s ease 0.5s;
+        }
+
+        .bar_in:hover {
+            width: 100%;
+            background-color: skyblue;
+
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="box">
+        <img src="3.png" alt="">
+
+        <div class="bar">
+            <div class="bar_in"></div>
+
+        </div>
+    </div>
+
+</body>
+
+</html>
