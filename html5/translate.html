@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* moving box skill which i have leared 
+        postion: margin , 2d tranform */
+        .div1 {
+            position: relative;
+            width: 500px;
+            height: 500px;
+            background-color: pink;
+            /* x means moving it by x axis */
+            /* transform: translate(100px, 0px); */
+            /* transform: translateX(100px); */
+
+            /* translate x which only translate x axis */
+        }
+
+        .div2 {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            margin-top: -100px;
+            margin-left: -100px;
+            
+            /* transform: translate(50%, 50%); */
+            width: 200px;
+            height: 200px;
+            background-color: blue;
+            /* and also you can use precentage inside of translate,
+            100% translateX points to 100% width
+            100% translateY points to 100% height  */
+        }
+
+        /* but translate is possibly to cover another box */
+        /* the advantage of tranform is that wont affect other element's location */
+    </style>
+</head>
+
+<body>
+    <div class="div1">
+        <div class="div2"></div>
+    </div>
+
+
+</body>
+
+</html>
