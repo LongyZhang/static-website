@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        @keyframes move {
+            0% {
+                transform: translate(0, 0);
+            }
+
+            25% {}
+
+            75% {}
+
+            100% {
+                transform: translate(1000px, 0);
+            }
+        }
+
+        div {
+            width: 200px;
+            height: 200px;
+            background-color: pink;
+            animation: move;
+            animation-duration: 6s;
+            animation-timing-function: ease;
+            animation-delay: 1s;
+            /* animation-iteration-count: 1; */
+            animation-direction: alternate;
+            animation-fill-mode: forwards;
+            /* fill-mode backward will return initial point */
+            /* fill mode forwards will position to end point */
+            /* direction is about which direction to play */
+            /* if you want box to there and return back, you can use alternative */
+
+            /* animation: move 6s ease 2s 3 normal fill-mode; */
+        }
+    </style>
+</head>
+
+<body>
+    <div></div>
+</body>
+
+</html>
